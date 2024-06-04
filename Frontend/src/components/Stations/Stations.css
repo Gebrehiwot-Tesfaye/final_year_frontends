@@ -1,0 +1,80 @@
+.container {
+    padding: 20px;
+}
+
+.section-title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar::after {
+    content: "\f002";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #3487df;
+    box-shadow: 0 0 5px #3487df;
+}
+
+
+.station-card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    margin:30px;
+}
+
+.station-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+}
+
+.station-info {
+    padding: 10px;
+}
+
+.station-info h3 {
+    margin: 0;
+}
+
+.station-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.view-details-button {
+    background-color: #3487df;
+    margin-left: 5px;
+   
+    color: #fff;
+    border: none;
+}
+
+.view-details-button:hover {
+    background-color: #0f60b7;
+}
+
