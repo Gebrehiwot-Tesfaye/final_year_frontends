@@ -23,6 +23,7 @@
     "axios": "^1.6.2",
     "bootstrap": "^5.0.2",
     "dotenv": "^8.2.0",
+    "enoent": "^1.0.0",
     "import": "^0.0.6",
     "jwt-decode": "^4.0.0",
     "moment": "^2.29.4",
@@ -50,4 +51,3 @@
     "@vitejs/plugin-react": "^4.2.1"
   }
 }
- 
