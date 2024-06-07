@@ -157,7 +157,7 @@ const DashboardSidebar = () => {
             </li>
 
             <li>
-              <NavLink to={"/scan"} activeClassName="active" end>
+              <NavLink to={"/dashboard/scan"} activeClassName="active" end>
                 <FaLock className="icon" />
                 <span>upload Image</span>
               </NavLink>
