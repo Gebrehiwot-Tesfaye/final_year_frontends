@@ -15,14 +15,6 @@ const Signup = async (formField) => {
   }
 };
 
-//  export const Login = async(formField) => {
-//     try {
-//         const response = await axios.post('http://127.0.0.1:8000/auth/jwt/create', formField)
-//         return response.data;
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
 const logIn = async (formField) => {
   try {
     const response = await axios.post(
@@ -118,11 +110,12 @@ const PatientProfile = async (formField) => {
     const token = localStorage.getItem("accessToken");
     const response = await axios.post(
       "http://127.0.0.1:8000/patient/",
-      formField,{
-            headers: {
-              Authorization: `JWT ${token}`,
-            }
-          }
+      formField,
+      {
+        headers: {
+          Authorization: `JWT ${token}`,
+        },
+      }
     );
     return response.data;
   } catch (error) {
@@ -142,19 +135,19 @@ const PatientCredentials = async (formField) => {
   }
 };
 
-export const setUserInfo = ({ accessToken }) => {
-  return setLocalStorage(authKey, accessToken);
-};
+// export const setUserInfo = ({ accessToken }) => {
+//   return setLocalStorage(authKey, accessToken);
+// };
 
-export const getUserInfo = () => {
-  const authToken = getFromLocalStorage(authKey);
-  if (authToken) {
-    const decodedToken = decodeToken(authToken);
-    return decodedToken;
-  } else {
-    return null;
-  }
-};
+// export const getUserInfo = () => {
+//   const authToken = getFromLocalStorage(authKey);
+//   if (authToken) {
+//     const decodedToken = decodeToken(authToken);
+//     return decodedToken;
+//   } else {
+//     return null;
+//   }
+// };
 export const isLoggedIn = () => {
   const authToken = getFromLocalStorage(authKey);
   return !!authToken;
