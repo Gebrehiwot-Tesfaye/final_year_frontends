@@ -163,9 +163,9 @@ const Logout = () => {
 const loginService = {
   logIn,
   Signup,
-  getUserInfo,
+  // getUserInfo,
   isLoggedIn,
-  setUserInfo,
+  // setUserInfo,
   // loggedOut,
   DoctorProfile,
   PatientProfile,
