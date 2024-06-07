@@ -72,6 +72,7 @@ function App() {
             // <PrivateAuthRoute roes={["HO"]}>
             <AppointmentPage />
             // </PrivateAuthRoute>
+            // it is not possible
           }
         />
 
