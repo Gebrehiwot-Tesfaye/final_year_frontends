@@ -39,7 +39,7 @@
   transform: scale(1.1);
 }
 .appointment-status > p {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: normal;
   color: #757575;
   margin-bottom: 3px;
@@ -54,6 +54,7 @@
 .appointments-table td {
   padding: 6px;
   border: 1px solid #ddd;
+  font-size: 14px;
 }
 
 .appointments-table th {

@@ -1,29 +1,35 @@
 .my-patients-table {
-  width: 100%;
+  width: 98%;
   border-collapse: collapse;
 }
 
 .my-patients-table th,
 .my-patients-table td {
-  padding: 24px;
+  padding: 10px;
   border: 1px solid #ddd;
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.my-patients-table th {
-  background-color: #f2f2f2;
+.my-patients-table th  {
+  background-color: #918f8f;
   text-align: left;
+  /* font-size: 14px; */
+  
 }
 
-.my-patients-table th:first-child,
+.my-patients-table td {
+  font-size: 14px;
+}
+
+/* .my-patients-table th:first-child,
 .my-patients-table td:first-child {
-  padding-left: 16px;
-}
+ 
+} */
 
-.my-patients-table th:last-child,
+/* .my-patients-table th:last-child,
 .my-patients-table td:last-child {
-  padding-right: 16px;
-}
+  padding-right: 8px;
+} */
 
 .my-patients-table tr:hover {
   background-color: #f5f5f5;

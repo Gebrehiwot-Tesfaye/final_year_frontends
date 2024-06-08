@@ -69,9 +69,9 @@ function App() {
         <Route
           path="/appointment"
           element={
-            // <PrivateAuthRoute roes={["HO"]}>
+            <PrivateAuthRoute roes={["HO"]}>
             <AppointmentPage />
-            // </PrivateAuthRoute>
+            </PrivateAuthRoute>
             // it is not possible
           }
         />

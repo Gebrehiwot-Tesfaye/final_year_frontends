@@ -159,6 +159,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
      "http://localhost:5173",
+     "https://ethio-vertual-health-center.vercel.app",
+ 
+     "https://musical-croissant-f0fb3d.netlify.app",
+    #  "https://musical-croissant-f0fb3d.netlify.app/",
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
